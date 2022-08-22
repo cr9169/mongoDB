@@ -5,6 +5,7 @@ const uri = "mongodb://0.0.0.0:27017";
 connect();
 
 async function connect() {
+
     const client = new MongoClient(uri);
 
     try {
@@ -15,6 +16,13 @@ async function connect() {
         
         console.log(`Connected to database ${db.databaseName}`); 
 
+        await books.createIndex({
+            name: "text",
+            description: "text",
+            pageAmount: -1
+        });
+
+        
         await getAllBooksOfAuthorQ("sadfsdfhftring");
         // create document and insert one
         /*const book = {

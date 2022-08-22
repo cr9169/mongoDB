@@ -1,7 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "mongodb": "^4.9.0"
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.5.2"
   },
   "name": "mongodb",
   "description": "",
