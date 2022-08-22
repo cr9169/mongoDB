@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^4.9.0"
+  },
+  "name": "mongodb",
+  "description": "",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
