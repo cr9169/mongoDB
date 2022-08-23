@@ -25,7 +25,7 @@ async function connect() {
         
         await getAllBooksOfAuthorQ("sadfsdfhftring");
         // create document and insert one
-        /*const book = {
+        const book = {
             name: "weeewew",
             description: "weweefwegww",
 	        publishingDate: "2022-01-01",
@@ -33,14 +33,14 @@ async function connect() {
 	        pageAmount: "wadfsgewew"
         };
         
-        await insertDoc(book, "books");*/
+        await insertDoc(book, "books");
 
-        //const searchCursor = await books.find();
-        //const result = await searchCursor.toArray();
-        //console.table(result);
+        const searchCursor = await books.find();
+        const result = await searchCursor.toArray();
+        console.table(result);
         
-        // const collection = await db.collections();
-        // collection.forEach( (col) => { console.log(col) });
+        const collection = await db.collections();
+        collection.forEach( (col) => { console.log(col) });
     }
 
     catch(err) {
